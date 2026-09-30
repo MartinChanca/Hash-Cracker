@@ -52,6 +52,10 @@ Revertido directamente (sin búsqueda): cisco
 
 That 56 hashes/second in the first example looks slow — it is, but only because the sample wordlist has 99 words in it. Spinning up several processes has a fixed startup cost, and with only 99 words to check, that startup cost dominates the whole run. Point it at a wordlist with a few hundred thousand words instead, and that same fixed cost becomes irrelevant next to the actual work — the real throughput is much higher.
 
+Auto-detecting and cracking an MD5 and a bcrypt hash against the small sample wordlist included in the repo:
+
+![Hash Cracker detecting MD5 and bcrypt through Hash Identifier and finding the password](assets/01-crack-md5-bcrypt.png)
+
 ### Installing it
 
 You'll need Python 3.11+ and [uv](https://docs.astral.sh/uv/).
@@ -101,6 +105,10 @@ uv run pytest -v
 ```
 
 41 tests as of this writing.
+
+The test suite, 41 tests passing:
+
+![pytest output: 41 tests passed](assets/02-tests-passing.png)
 
 ### Credit
 
@@ -154,6 +162,10 @@ Revertido directamente (sin búsqueda): cisco
 
 Ese "56 hashes/seg" del primer ejemplo se ve lento — y lo es, pero solo porque el wordlist de muestra tiene 99 palabras. Levantar varios procesos tiene un costo fijo de arranque, y con solo 99 palabras para revisar, ese costo domina toda la corrida. Apuntá a un diccionario con unos cientos de miles de palabras y ese mismo costo fijo se vuelve irrelevante al lado del trabajo real — el rendimiento de crucero es mucho más alto.
 
+Autodetectando y crackeando un hash MD5 y uno bcrypt contra el wordlist chico incluido en el repo:
+
+![Hash Cracker detectando MD5 y bcrypt con Hash Identifier y encontrando la contraseña](assets/01-crack-md5-bcrypt.png)
+
 ### Instalación
 
 Necesitás Python 3.11+ y [uv](https://docs.astral.sh/uv/).
@@ -203,6 +215,10 @@ uv run pytest -v
 ```
 
 41 tests al momento de escribir esto.
+
+La suite de tests, 41 tests pasando:
+
+![Salida de pytest: 41 tests pasaron](assets/02-tests-passing.png)
 
 ### Crédito
 
