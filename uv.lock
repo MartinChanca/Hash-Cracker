@@ -276,7 +276,7 @@ requires-dist = [
     { name = "argon2-cffi", specifier = ">=23.1" },
     { name = "bcrypt", specifier = ">=4.1" },
     { name = "click", specifier = ">=8.1" },
-    { name = "hashid", git = "https://github.com/TinchoLay/Hash-Identifier.git" },
+    { name = "hashid", git = "https://github.com/MartinChanca/Hash-Identifier.git" },
     { name = "passlib", specifier = ">=1.7" },
     { name = "pycryptodome", specifier = ">=3.20" },
     { name = "rich", specifier = ">=13.0" },
@@ -291,7 +291,7 @@ dev = [
 [[package]]
 name = "hashid"
 version = "0.1.0"
-source = { git = "https://github.com/TinchoLay/Hash-Identifier.git#6b1d3d85f23c3b779d7098006c2e1d58140947d9" }
+source = { git = "https://github.com/MartinChanca/Hash-Identifier.git#6b1d3d85f23c3b779d7098006c2e1d58140947d9" }
 dependencies = [
     { name = "click" },
     { name = "rich" },

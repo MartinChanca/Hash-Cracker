@@ -1,6 +1,6 @@
 # Hash Cracker
 
-A command-line tool that takes a hash and a wordlist, and tries to find which word produced that hash — using as many CPU cores as your machine has. Companion project to [Hash-Identifier](https://github.com/TinchoLay/Hash-Identifier): this tool imports it directly to figure out what kind of hash it's looking at before deciding how to attack it.
+A command-line tool that takes a hash and a wordlist, and tries to find which word produced that hash — using as many CPU cores as your machine has. Companion project to [Hash-Identifier](https://github.com/MartinChanca/Hash-Identifier): this tool imports it directly to figure out what kind of hash it's looking at before deciding how to attack it.
 
 Built from scratch as a learning project, using [CarterPerez-dev's hash-cracker](https://github.com/CarterPerez-dev/Cybersecurity-Projects/tree/main/PROJECTS/beginner/hash-cracker) as the starting idea, not as a template to copy.
 
@@ -18,7 +18,7 @@ That's all "cracking" is: brute-force guessing, sped up by trying thousands or m
 
 ### Why this exists
 
-[Hash-Identifier](https://github.com/TinchoLay/Hash-Identifier), the companion project, answers "what algorithm produced this hash?" This project answers the next question: "given that algorithm, can I recover the original password from a wordlist?" They're separate tools on purpose — identifying is fast and diagnostic, cracking is computationally heavy — but this one actually imports the other as a real dependency, so you never have to tell it the algorithm by hand. Point it at a hash, it figures out the rest.
+[Hash-Identifier](https://github.com/MartinChanca/Hash-Identifier), the companion project, answers "what algorithm produced this hash?" This project answers the next question: "given that algorithm, can I recover the original password from a wordlist?" They're separate tools on purpose — identifying is fast and diagnostic, cracking is computationally heavy — but this one actually imports the other as a real dependency, so you never have to tell it the algorithm by hand. Point it at a hash, it figures out the rest.
 
 ### A responsible-use note
 
@@ -61,12 +61,12 @@ Auto-detecting and cracking an MD5 and a bcrypt hash against the small sample wo
 You'll need Python 3.11+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-git clone https://github.com/TinchoLay/Hash-Cracker.git
+git clone https://github.com/MartinChanca/Hash-Cracker.git
 cd Hash-Cracker
 uv sync
 ```
 
-That last step also pulls in [Hash-Identifier](https://github.com/TinchoLay/Hash-Identifier) automatically, straight from its GitHub repo — it's declared as a real dependency, not copy-pasted code.
+That last step also pulls in [Hash-Identifier](https://github.com/MartinChanca/Hash-Identifier) automatically, straight from its GitHub repo — it's declared as a real dependency, not copy-pasted code.
 
 ### Using it
 
@@ -130,7 +130,7 @@ Eso es "crackear": adivinar por fuerza bruta, acelerado probando miles o millone
 
 ### Por qué existe este proyecto
 
-[Hash-Identifier](https://github.com/TinchoLay/Hash-Identifier), el proyecto hermano, responde "¿qué algoritmo generó este hash?". Este proyecto responde la pregunta siguiente: "sabiendo ese algoritmo, ¿puedo recuperar la contraseña original a partir de un diccionario?". Son herramientas separadas a propósito — identificar es rápido y diagnóstico, crackear es pesado computacionalmente — pero esta importa a la otra como una dependencia real, así que nunca hace falta indicarle el algoritmo a mano. Le apuntás a un hash, y el resto lo resuelve solo.
+[Hash-Identifier](https://github.com/MartinChanca/Hash-Identifier), el proyecto hermano, responde "¿qué algoritmo generó este hash?". Este proyecto responde la pregunta siguiente: "sabiendo ese algoritmo, ¿puedo recuperar la contraseña original a partir de un diccionario?". Son herramientas separadas a propósito — identificar es rápido y diagnóstico, crackear es pesado computacionalmente — pero esta importa a la otra como una dependencia real, así que nunca hace falta indicarle el algoritmo a mano. Le apuntás a un hash, y el resto lo resuelve solo.
 
 ### Una nota sobre uso responsable
 
@@ -171,12 +171,12 @@ Autodetectando y crackeando un hash MD5 y uno bcrypt contra el wordlist chico in
 Necesitás Python 3.11+ y [uv](https://docs.astral.sh/uv/).
 
 ```bash
-git clone https://github.com/TinchoLay/Hash-Cracker.git
+git clone https://github.com/MartinChanca/Hash-Cracker.git
 cd Hash-Cracker
 uv sync
 ```
 
-Ese último paso también trae [Hash-Identifier](https://github.com/TinchoLay/Hash-Identifier) automáticamente, directo desde su repo de GitHub — está declarado como una dependencia real, no es código copiado y pegado.
+Ese último paso también trae [Hash-Identifier](https://github.com/MartinChanca/Hash-Identifier) automáticamente, directo desde su repo de GitHub — está declarado como una dependencia real, no es código copiado y pegado.
 
 ### Uso
 

@@ -23,7 +23,7 @@ dev = [
 ]
 
 [tool.uv.sources]
-hashid = { git = "https://github.com/TinchoLay/Hash-Identifier.git" }
+hashid = { git = "https://github.com/MartinChanca/Hash-Identifier.git" }
 
 [build-system]
 requires = ["hatchling"]
